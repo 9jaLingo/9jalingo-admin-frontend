@@ -17,6 +17,7 @@
 /.next/
 /out/
 
+@/components/user-management-page
 # production
 /build
 

@@ -10,7 +10,7 @@ export type UserRow = {
   status: UserStatus;
 };
 
-export const userRows: UserRow[] = [
+export const platformUsers: UserRow[] = [
   {
     id: "1",
     email: "albertokolie1515@gmail.com",
@@ -31,11 +31,53 @@ export const userRows: UserRow[] = [
   },
   {
     id: "3",
-    email: "chijokemeekelachi@gmail.com",
+    email: "chijokemekelachi@gmail.com",
     plan: "STARTER GIFT",
     apiKeyCount: 7,
     joined: "5/15/2026",
     lastActive: "3 wks ago",
+    status: "ACTIVE",
+  },
+];
+
+export const userRows = platformUsers;
+
+export type AdminPlan = {
+  label: string;
+  variant: "blue" | "gold" | "green";
+};
+
+export type AdminRow = {
+  name: string;
+  email: string;
+  plans: AdminPlan[];
+  registered: string;
+  status: "ACTIVE";
+};
+
+export const adminUsers: AdminRow[] = [
+  {
+    name: "Abdurrazak Bello",
+    email: "habdurrazakq@gmail.com",
+    plans: [
+      { label: "Analyst", variant: "blue" },
+      { label: "Admin", variant: "gold" },
+    ],
+    registered: "8/3/2026",
+    status: "ACTIVE",
+  },
+  {
+    name: "Okolie Chukwuka",
+    email: "okolie@9jalingo.org",
+    plans: [{ label: "Super Admin", variant: "green" }],
+    registered: "6/29/2026",
+    status: "ACTIVE",
+  },
+  {
+    name: "Muhammad Yakub",
+    email: "myakub@9jalingo.org",
+    plans: [{ label: "Super Admin", variant: "green" }],
+    registered: "5/15/2026",
     status: "ACTIVE",
   },
 ];
