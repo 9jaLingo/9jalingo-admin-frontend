@@ -8,24 +8,24 @@ type ModelPricingPageProps = {
 
 export function ModelPricingPage({ activeHref = "/price" }: ModelPricingPageProps) {
   return (
-    <main className="min-h-screen bg-[#efefef] text-[#444]">
-      <div className="grid min-h-screen grid-cols-1 lg:grid-cols-[200px_minmax(0,1fr)]">
+    <main className="min-h-screen bg-[#efefef] text-[#444] w-full">
+      <div className="grid min-h-screen grid-cols-1 lg:grid-cols-[200px_minmax(0,1fr)] ">
         <Sidebar activeHref={activeHref} />
 
         <section className="px-5 py-5 sm:px-7">
           <div className="max-w-[806px]">
             <header className="mb-8">
               <h1 className="text-[33px] font-semibold leading-none tracking-[-0.02em] text-[#3f3f3f]">
-                Model Pricing
+                Voice Management
               </h1>
               <p className="mt-2 text-[14px] text-[#575757]">
-                Manage service costs and usage limits for different AI models.
+                Load and configure base speaker voice and emdedding got TTS services
               </p>
             </header>
 
-            <section className="overflow-hidden rounded-[8px] border border-[#b7b7b7] bg-white">
-              <div className="grid gap-5 px-6 py-6 md:grid-cols-[auto_minmax(0,1fr)_auto] md:items-center">
-                <div className="flex items-start gap-12">
+            <section className="overflow-hidden rounded-[8px] border border-[#b7b7b7] bg-white flex flex-col">
+              <div className="flex flex-row w-full justify-between px-5 py-4">
+                <div className="flex flex-row ">
                   <StatBlock label="Total Models:" value={modelRows.length.toString()} />
                   <StatBlock label="System Health:" value="Operational" />
                 </div>
@@ -71,7 +71,7 @@ export function ModelPricingPage({ activeHref = "/price" }: ModelPricingPageProp
                         </p>
                       </div>
 
-                      <div className="flex flex-wrap gap-1.5">
+                      <div className="flex flex-wrap gap-1.5 w-20">
                         {row.languages.map((language) => (
                           <LanguageChip key={language} language={language} />
                         ))}
