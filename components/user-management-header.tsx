@@ -12,7 +12,7 @@ export function UserManagementHeader() {
         </p>
       </div>
 
-      <div className="flex items-start gap-4 self-end sm:self-auto">
+      {/* <div className="flex items-start gap-4 self-end sm:self-auto">
         <div className="text-right">
           <p className="text-sm font-semibold text-slate-700">
             habdurrazakq@gmail.com
@@ -24,7 +24,7 @@ export function UserManagementHeader() {
         <button className="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 bg-white text-slate-500 shadow-sm">
           <LogOut className="h-4 w-4" />
         </button>
-      </div>
+      </div> */}
     </header>
   );
 }
