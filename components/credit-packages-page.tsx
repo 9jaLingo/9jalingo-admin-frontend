@@ -17,7 +17,7 @@ export default function CreditPage() {
             <h2 className="text-2xl font-semibold text-gray-800">Credit Packages</h2>
             <p className="text-sm text-gray-500">Manage available credit bundles and subscription tiers.</p>
           </div>
-          <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg shadow-sm hover:bg-blue-700 transition">
+          <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg shadow-sm hover:bg-blue-700 transition">
             <Plus size={18} /> Add Package
           </button>
         </div>
